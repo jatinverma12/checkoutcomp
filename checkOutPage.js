@@ -11,6 +11,7 @@ var c2=document.getElementById("c2");
 var addbtn=document.getElementById("addbutton");
 var submitbtn=document.getElementById("submitbutton");
 
+
 addbtn.onclick=function(){
     modal.style.display="none";
     modal2.style.display="block";

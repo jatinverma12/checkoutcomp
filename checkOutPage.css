@@ -10,6 +10,9 @@ p {
 h5 {
   margin: 0;
 }
+.one:hover {
+  background-color: white;
+}
 .addressbox {
   justify-content: space-between;
   align-items: center;
