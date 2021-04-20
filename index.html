@@ -1,295 +1,105 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c98256b770.js" crossorigin="anonymous"></script>
-    
+    <title>SAVED CARD</title>
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- font awsome icons cdn link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./checkOutPage.css">
+   
+    <!-- plain css link -->
+    <link rel="stylesheet" href="style.css">
     
-    <title>Document</title>
 </head>
 <body>
-    <div class='container-fluid'>
-        <div class="row" style='height: 800px;'>
-            <div class="col-lg-7">
-                <div class="row addressbox adbox" >
-                    <div class="row addressline" style="margin:0.20rem;" >
-                        <p style="font-weight: bold; margin:3px 0">Delivery to XYZ, PINCODE</p>
-                        <p style="color: #babcbf;">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</p>
-                    </div>
-                    
-                        <a style="color:#dcacec; font-size: small; border: 1px solid #dcacec;"class="btn btn-outline btn-sm one" id="myBtn">CHANGE ADDRESS</a>
-                        <div class="modal" id="myModal">
-                              <div class="modal-content">
-                                  
-                                    <p style="color:#dcacec; font-size: large; font-weight: bold;">Change Delivery Address:<span id="c1" class="close">&times;</span></p>
-                                    <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
-                                   
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="ENTER PINCODE">
-                                    <span class="input-group-btn">
-                                      <button class="btn btn" style="background-color:#dcacec ; color: white;" type="submit">
-                                          Check
-                                      </button>
-                                    </span>
-                                  </div>
-                                
-                                <form style="margin-top: 1rem; " id="myForm1">
-                                
-                                  <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
-                                    <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
-                                 </div>
+ 
 
-                                    <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
-                                            <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
-                                    </div>
-                                    <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
-                                            <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
-                                    </div>
-                                </form>  
-                                <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
-                                <div class="btn btn-sm" style="background-color: #dcacec ; color: white; margin:7px auto;" id="addbutton">Add New Address</div>
-
-                          
-                            </div>
-                        </div>
-
-                        <div class="modal" id="myModal2">
-                            <div class="modal-content">
-                                
-                                <p style="color:#dcacec; font-size: large; font-weight: bold;">Add New Address:<span id="c2" class="close">&times;</span></p>
-                                  <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
-
-                                  <form style="margin-top: 1rem; " id="myForm1">
-                                    <div class="form-group row" style="color:#dcacec;">
-                                        <label for="building" class="col-sm-2 col-form-label" >FLOOR NO, BUILDING</label>
-                                        <div class="col-sm-10"> 
-                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
-                                        </div>
-                                      </div>
-                                    <div class="form-group row" style="color:#dcacec">
-                                        <label for="building" class="col-sm-2 col-form-label" >LANE 2</label>
-                                        <div class="col-sm-10">
-                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row" style="color:#dcacec; ">
-                                        <label for="building" class="col-sm-2 col-form-label" >CITY, DISTRICT</label>
-                                        <div class="col-sm-10">
-                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row" style="color:#dcacec">
-                                        <label for="state" class="col-sm-2 col-form-label" >STATE</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="state" placeholder="UTTAR PRADESH">
-                                        </div>
-
-                                        <label for="pincode" class="col-sm-2 col-form-label" >PINCODE</label>
-                                        <div class="col-sm-4">
-                                            <input type="text" class="form-control" id="pincode" placeholder="110067">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row" style="color:#dcacec;">
-                                        <label for="phone" class="col-sm-2 col-form-label" >PHONE NUMBER</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control" id="phone" placeholder="9834568927">
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <a class="btn col-10" id="submitbutton" type="submit" style="background-color:#dcacec; color: white; margin:2px auto;">Save Address</a>
-                                    </div>
-
-                                  </form>
-                                 
-                            
-
-                        
-                          </div>
-                      </div>
-                  
-                    
-
-                          
-               
-                   
-                </div>
-
-                <div class="row addressbox" 
-                style="flex-direction: column; 
-                justify-content: flex-start; 
-                align-items: flex-start; padding-left: 2rem;">
-                    <h5 style="margin:0">AVAILABLE OFFERS</h5>
-                    <p style="margin:0.5rem 0;">10% discounts.......</p>
-                    <a style="color:#0275d8; text-decoration-line: none;" href="#">Show More</a>
-                </div>
-
-                <div class="row col-lg-10 addressbox " style="justify-content: flex-start; align-items: flex-start; ">
-                    <img class="col-lg-4" style="margin-top: 0.25rem;" src="./Images/11.jpg">
-                    
-                    <div class="row col-lg-8 imagebox" >
-                        <div class="row" style='flex-direction: column; margin: 0;'>
-                            <h5 style="margin:0">LABEL BY DISHA</h5>
-                            <p  style="margin:0"> LABEL BY DISHA</p>
-                            <div class="row" style="justify-content: space-between; margin: 0.15rem 0;">
-                                <div >
-                                    <select class="custom-select" id="size">
-                                        <option selected>Size</option>
-                                        <option value="S">S</option>
-                                        <option value="L">L</option>
-                                        <option value="M">M</option>
-                                      </select>
-                                </div>
-                               
-                                <div >
-                                    <select class="custom-select" id="qty">
-                                        <option selected>Qty</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                      </select>
-                                </div>
-                            </div>
-                            <p style="margin-top: 1rem;">Delivered By 14 August</p>
-                           
-                            
-                        </div>
-                        <div class="row col-3" style="flex-direction: column; ">
-                            <h5>2999</h5>
-                           <p style="color: #babcbf;"><spam style="text-decoration-line: line-through; color: #babcbf;">6000</spam> 30%</p>
-                        </div>
-                    </div>
-                    <hr class="col-lg-8" style="border: 1px solid  #d9dedb; width:100%; margin:0.5rem auto;">
-                    <div  class="row col-lg-8 removesec" >
-                        <a class="btn btn-sm"href='#'>Remove</a>
-                        <div style="height: 20px; border: 1px solid  #d9dedb ; width: 1px;"></div>
-                        <a class="btn btn-sm"href='#'>Wishlist</a>
-                    </div>
-                    
-                   
-                </div>
-                
-                <div class="row col-lg-10 addressbox" style="justify-content: flex-start;">
-                    <i style="margin:5px;"class="far fa-bookmark"></i> ADD MORE FROM WISHLIST
-               </div>
-               <h5 style="margin:1rem;">YOU MAY ALSO LIKE </h5>
-               <div class='row images'>
-                    <div class="col-5 col-md-4 col-lg-2 image">
-                        <img src="./Images/23.jpg">
-                    
-                        <div class="i11">
-                            <h5 style="margin:0">BRAND</h5>
-                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
-                        </div>
-                    </div>
-                    <div class="col-5 col-md-4 col-lg-2 image">
-                        <img src="./Images/23.jpg">
-                    
-                        <div class="i11">
-                            <h5 style="margin:0">BRAND</h5>
-                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
-                        </div>
-                    </div>
-                    <div class="col-5 col-md-4 col-lg-2 image">
-                        <img src="./Images/23.jpg">
-                    
-                        <div class="i11">
-                            <h5 style="margin:0">BRAND</h5>
-                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
-                        </div>
-                    </div>
-                    <div class="col-5 col-md-4 col-lg-2 image">
-                        <img src="./Images/23.jpg">
-                    
-                        <div class="i11">
-                            <h5 style="margin:0">BRAND</h5>
-                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
-                        </div>
-                    </div>
-                    <div class="col-5 col-md-4 col-lg-2 image">
-                        <img src="./Images/23.jpg">
-                    
-                        <div class="i11">
-                            <h5 style="margin:0">BRAND</h5>
-                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
-                        </div>
-                    </div>
-               </div>
-            </div>
-            <div class="line"></div>
-            <div class='col-lg-4'>
-                
-                    <form  style="margin-top: 1rem;">
-                        <div class="form-row col-lg-12 applycoupon"> 
-                          <div class="col-auto">
-                            <label class="sr-only" for="inlineFormInput">Name</label>
-                            <input style="height: 30px;"type="text" class="form-control" id="inlineFormInput" placeholder="APPLY COUPON">
-                          </div>
-                          
-                          <div class="col-auto">
-                            <a style="color:#dcacec; font-size: small; border: 1px solid #dcacec;"class="btn btn-outline btn-sm one">Apply</a>
-                          </div>
-                        </div>
-                      </form>
-                    
-               
-
-               <div class="col-lg-8 addressbox">
-                <h6 class="price">PRICE DETAILS(N ITEMS)</h6>
-                <div class="row price" >
-                        <p style="color: #babcbf;">TOTAL MRP</p>
-                        <p style="font-weight: bold;">2999</p>
-                </div>
-                <div class="row price" >
-                    <p style="color: #babcbf;">ORIGINAL MRP</p>
-                    <p style="font-weight: bold;">6000</p>
-                </div>
-                <div class="row price" >
-                    <p style="color: #babcbf;">COUPON DISCOUNT</p>
-                    <p style="font-weight: bold;">30%OFF</p>
-                </div>
-                <div class="row price" >
-                    <p style="color: #babcbf;">SHIPPING CHARGE</p>
-                    <p style="font-weight: bold; color:#0275d8 ;">FREE</p>
-                 </div>
-                 <hr  style="border: 1px solid grey; width:90%; margin:0.5rem auto;">
-                 <div class="row price">
-                    <p style="font-weight: bold;">TOTAL AMOUNT</p>
-                    <p style="font-weight: bold;">2999</p>
-                 </div>
-                 
-               </div>
-                <a id="po"  style="background-color: #daa0f2;"class=" col-lg-8 btn btn-sm">PLACE ORDER</a>
-               <h5 style="margin:1rem;padding-left: 1rem;">WE ACCEPT:</h5>
-               <div class="row col-lg-9" style="margin:0;justify-content: space-around;">
-                <i class="fab fa-paypal fa-2x"></i>
-                    <div class="row" style="flex-direction: column; align-items: center;">
-                        <i class="fab fa-cc-visa fa-2x"></i>
-                        <i class="fab fa-cc-mastercard fa-2x"></i>
-                    </div>
-                <i class="fab fa-google fa-2x"></i>
-                </div>
-                <hr style="width:80%;border:2px solid #d9dedb; margin-left: 1rem auto;">
-                <h5 style="margin-bottom: 1rem;">ADDITIONAL COMMENT</h5> 
-                <textarea class="col-lg-10 form-control" id="building" rows="4"></textarea>
-                
-                  
-               
-            </div>
+  <div class="main-div">
+    <h1 class="back"> <a href="#" style="text-decoration: none; color: #000;"> Back To Shopping</a></h1>
+    <div class="card-div">
+        <div class="mobile-pic">
+          <!-- <img src="phone.png" alt=""> -->
+          <!-- <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0yOTguNjY3LDI1LjZoLTg1LjMzM2MtNC43MSwwLTguNTMzLDMuODIzLTguNTMzLDguNTMzYzAsNC43MSwzLjgyMyw4LjUzMyw4LjUzMyw4LjUzM2g4NS4zMzMNCgkJCWM0LjcxLDAsOC41MzMtMy44MjMsOC41MzMtOC41MzNDMzA3LjIsMjkuNDIzLDMwMy4zNzcsMjUuNiwyOTguNjY3LDI1LjZ6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNTguNCwyNS42aC04LjUzM2MtNC43MSwwLTguNTMzLDMuODIzLTguNTMzLDguNTMzYzAsNC43MSwzLjgyMyw4LjUzMyw4LjUzMyw4LjUzM2g4LjUzMw0KCQkJYzQuNzEsMCw4LjUzMy0zLjgyMyw4LjUzMy04LjUzM0MzNjYuOTMzLDI5LjQyMywzNjMuMTEsMjUuNiwzNTguNCwyNS42eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMjY2LjU5OCw0MzUuMkgyNDUuNDFjLTEyLjk3OSwwLTIzLjU0MywxMC41NjQtMjMuNTQzLDIzLjU0M3Y0LjEyMmMwLDEyLjk3OSwxMC41NjQsMjMuNTM1LDIzLjUzNSwyMy41MzVoMjEuMTg4DQoJCQljMTIuOTc5LDAsMjMuNTQzLTEwLjU1NiwyMy41NDMtMjMuNTM1di00LjEyMkMyOTAuMTMzLDQ0NS43NjQsMjc5LjU2OSw0MzUuMiwyNjYuNTk4LDQzNS4yeiBNMjczLjA2Nyw0NjIuODY1DQoJCQljMCwzLjU2Ny0yLjkwMSw2LjQ2OC02LjQ2OCw2LjQ2OEgyNDUuNDFjLTMuNTc1LDAtNi40NzctMi45MDEtNi40NzctNi40Njh2LTQuMTIyYzAtMy41NzUsMi45MDEtNi40NzcsNi40NzctNi40NzdoMjEuMTgNCgkJCWMzLjU3NiwwLDYuNDc3LDIuOTAxLDYuNDc3LDYuNDc3VjQ2Mi44NjV6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNzAuMjI3LDBIMTQxLjc4MWMtMTcuMDA3LDAtMzAuODQ4LDEzLjg0MS0zMC44NDgsMzAuODQ4djQ1MC4zMDRjMCwxNy4wMDcsMTMuODQxLDMwLjg0OCwzMC44NDgsMzAuODQ4aDIyOC40MzcNCgkJCWMxNy4wMDcsMCwzMC44NDgtMTMuODQxLDMwLjg0OC0zMC44MzlWMzAuODQ4QzQwMS4wNjcsMTMuODQxLDM4Ny4yMjYsMCwzNzAuMjI3LDB6IE0zODQsNDgxLjE1Mg0KCQkJYzAsNy41OTUtNi4xNzgsMTMuNzgxLTEzLjc3MywxMy43ODFIMTQxLjc4MWMtNy42MDMsMC0xMy43ODEtNi4xODctMTMuNzgxLTEzLjc3M1YzMC44NDhjMC03LjU5NSw2LjE3OC0xMy43ODEsMTMuNzgxLTEzLjc4MQ0KCQkJaDIyOC40MzdjNy42MDMsMCwxMy43ODEsNi4xODcsMTMuNzgxLDEzLjc4MVY0ODEuMTUyeiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNMzkyLjUzMyw1MS4ySDExOS40NjdjLTQuNzEsMC04LjUzMywzLjgyMy04LjUzMyw4LjUzM3YzNTguNGMwLDQuNzEsMy44MjMsOC41MzMsOC41MzMsOC41MzNoMjczLjA2Nw0KCQkJYzQuNzEsMCw4LjUzMy0zLjgyMyw4LjUzMy04LjUzM3YtMzU4LjRDNDAxLjA2Nyw1NS4wMjMsMzk3LjI0NCw1MS4yLDM5Mi41MzMsNTEuMnogTTM4NCw0MDkuNkgxMjhWNjguMjY3aDI1NlY0MDkuNnoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" /> -->
         </div>
+        <div class="all-text">
+          <div class="text1">
+            <h1 style="color: #fff;">THANK YOU</h1>
+            <p> Your Order Is Confirmed</p>
+            <img src="phone1real.png" alt="">
+          </div>
+          <div class="text2">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUwNy4yIDUwNy4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDcuMiA1MDcuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGNpcmNsZSBzdHlsZT0iZmlsbDojMzJCQTdDOyIgY3g9IjI1My42IiBjeT0iMjUzLjYiIHI9IjI1My42Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMEFBMDZFOyIgZD0iTTE4OC44LDM2OGwxMzAuNCwxMzAuNGMxMDgtMjguOCwxODgtMTI3LjIsMTg4LTI0NC44YzAtMi40LDAtNC44LDAtNy4yTDQwNC44LDE1MkwxODguOCwzNjh6Ii8+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTI2MCwzMTAuNGMxMS4yLDExLjIsMTEuMiwzMC40LDAsNDEuNmwtMjMuMiwyMy4yYy0xMS4yLDExLjItMzAuNCwxMS4yLTQxLjYsMEw5My42LDI3Mi44DQoJCWMtMTEuMi0xMS4yLTExLjItMzAuNCwwLTQxLjZsMjMuMi0yMy4yYzExLjItMTEuMiwzMC40LTExLjIsNDEuNiwwTDI2MCwzMTAuNHoiLz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTM0OC44LDEzMy42YzExLjItMTEuMiwzMC40LTExLjIsNDEuNiwwbDIzLjIsMjMuMmMxMS4yLDExLjIsMTEuMiwzMC40LDAsNDEuNmwtMTc2LDE3NS4yDQoJCWMtMTEuMiwxMS4yLTMwLjQsMTEuMi00MS42LDBsLTIzLjItMjMuMmMtMTEuMi0xMS4yLTExLjItMzAuNCwwLTQxLjZMMzQ4LjgsMTMzLjZ6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+            <p>Order No- Xxxx-Yyyy-Zzzz</p>
+          </div>
+          <div class="text3">
+            <p style="padding-bottom: 10px;">You Will Recieve Your Updates On</p>
+  
+              <i class="fa fa-phone"> <small style="padding-left: 10px; font-size: 0.9rem;">1234567890</small> </i> 
+           
+              <i class="fas fa-envelope"><small style="padding-left: 10px;font-size: 0.9rem;">abc@gmail.com</small></i>  
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="container-fluid">
+    <h5 class="my-2" >ORDER NO - </h5>
+    <div class="row col-lg-6" style="border: 2px solid grey; border-radius: 5px; margin:0;">
+        <img class="col-lg-3 col-md-4 col-sm-5 " style="padding: 1rem;;"src="./13.jpg">
+        <div class="row" style="flex-direction: column; padding: 1rem; font-size: large;">
+            <h5 style="margin:0.1rem 0;">SUITED</h5>
+            <p class="text" style="margin:0.1rem 0;color: #babcbf;">BLUE COTTON SHIRT</p>
+            <p class="text" style="margin:0.1rem 0;color: #babcbf;">SIZE-XL</p>
+        </div>
+       
+    </div>
+    <div class="row col-lg-8 my-3" style="font-size: small; justify-content: space-between; align-items:center;">
+        <div class="row col-lg-4 col-md-4" style="flex-direction: column;">
+            <p class="text" style="margin:0"><i style="margin-left: 0.5rem; margin-right: 0.5rem;"class="fas fa-phone-alt icon"></i>9395462884</p>
+            <p class="text" style="margin:0"><i style="margin-left: 0.5rem; margin-right: 0.5rem;" class="fas fa-envelope icon"></i>1234@example.com</p>
+        </div>
+
+        <p class="col-lg-8 col-md-6 text" style="margin:auto 0;margin-left: 0.5rem;">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</p>
         
     </div>
+    <a class="col-md-2 my-3 btn btn-sm " style="background-color: #ba9df5;">Track Order</a>
+</div> 
 
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="./checkOutPage.js"></script>
-    
+
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
