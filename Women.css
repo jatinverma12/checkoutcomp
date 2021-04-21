@@ -1,0 +1,93 @@
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+img {
+  width: 100%;
+}
+.circle {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.circle img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+.trending {
+  background-color: #ba9df5;
+  height: 300px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.topbrand {
+  justify-content: space-between;
+}
+.toplast {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 575px) {
+  .lcontain {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand {
+    width: 70%;
+  }
+  .last {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .trending {
+    height: 400px;
+  }
+  .liked {
+    height: 400px;
+  }
+  .brand {
+    height: 400px;
+  }
+  .last {
+    height: 400px;
+  }
+}
+.brand {
+  background: linear-gradient(to bottom, #00ff99 0%, #ccff33 100%);
+  height: 300px;
+}
+
+@media screen and (max-width: 992px) {
+  .topbrand {
+    justify-content: space-around;
+  }
+  .toplast {
+    justify-content: space-around;
+  }
+}
+
+.liked {
+  background-image: url('./9.jpg');
+  height: 300px;
+  border-radius: 10px;
+  background-position: center;
+  display: inline-block;
+}
+
+.last {
+  background-image: url('./5.webp');
+  background-position: center;
+  display: inline-block;
+  height: 300px;
+}
