@@ -29,73 +29,169 @@ img {
   margin-left: -50px;
 }
 
-.trending {
-  background-color: #ba9df5;
-  height: 300px;
-  width: 40%;
+.liked {
+  background-image: url('./9.jpg');
   border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.liked:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.26);
 }
 
-.topbrand {
-  justify-content: space-between;
-}
-.toplast {
-  justify-content: space-between;
+.last {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-@media screen and (max-width: 575px) {
-  .lcontain {
-    width: 50%;
-  }
+.last:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.26);
 }
 
-@media screen and (max-width: 767px) {
-  .brand {
-    width: 70%;
-  }
-  .last {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .trending {
-    height: 400px;
-  }
-  .liked {
-    height: 400px;
-  }
-  .brand {
-    height: 400px;
-  }
-  .last {
-    height: 400px;
-  }
-}
 .brand {
   background: linear-gradient(to bottom, #00ff99 0%, #ccff33 100%);
   height: 300px;
 }
 
-@media screen and (max-width: 992px) {
-  .topbrand {
-    justify-content: space-around;
+.lastcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ibrand {
+  background: linear-gradient(to bottom, #00ff99 0%, #ccff33 100%);
+}
+.last p {
+  width: 20%;
+  font-size: x-large;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 90%;
+  margin-left: 22%;
+  margin-bottom: 0;
+}
+
+/*main*/
+
+@media screen and (min-width: 992px) {
+  .trending {
+    display: inline-block;
+    height: 300px;
+    background-color: cyan;
+    border-radius: 2%;
+    margin: 1%;
+    width: 17%;
   }
-  .toplast {
-    justify-content: space-around;
+  .ibrand {
+    display: inline-block;
+    height: 300px;
+    width: 22%;
+    background: linear-gradient(to bottom, #00ff99 0%, #ccff33 100%);
+    margin: 1%;
+  }
+  .likedcontainer {
+    width: 16%;
+    display: inline-block;
+    margin: 1.5%;
+    font-size: large;
+  }
+  .last {
+    width: 22%;
+    background-image: url('./8.jpg');
+    background-position: center;
+    background-size: 100%;
+    margin: 1%;
   }
 }
 
-.liked {
-  background-image: url('./9.jpg');
-  height: 300px;
-  border-radius: 10px;
-  background-position: center;
-  display: inline-block;
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .ibrand {
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+    margin: 1%;
+  }
+
+  .trending {
+    display: inline-block;
+    height: 300px;
+    background-color: cyan;
+    border-radius: 2%;
+    margin: 1%;
+    width: 30%;
+  }
+  .likedcontainer {
+    padding: 0.5rem;
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    font-size: large;
+  }
+  .liked {
+    height: 300px;
+  }
+
+  .last {
+    width: 30%;
+    background-image: url('./8.jpg');
+    background-position: center;
+    background-size: 100%;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .likedcontainer {
+    padding: 0.5rem;
+    width: 47%;
+    display: inline-block;
+    margin: 1%;
+    font-size: large;
+  }
+  .liked {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ibrand {
+    display: inline-block;
+    height: 300px;
+    width: 47%;
+    background: linear-gradient(to bottom, #00ff99 0%, #ccff33 100%);
+    margin: 1%;
+  }
+
+  .trending {
+    display: inline-block;
+    height: 300px;
+    background-color: cyan;
+    border-radius: 2%;
+    margin: 1%;
+    width: 47%;
+  }
+  .last {
+    width: 47%;
+    background-image: url('./8.jpg');
+    background-position: center;
+    background-size: 100%;
+    margin: 1%;
+  }
+}
+.swiper-slide {
+  height: 80%;
+}
+.swiper-container {
+  width: 90%;
+  height: 200px;
+}
+.jumbo {
+  background-color: #c8c0fa;
 }
 
-.last {
-  background-image: url('./5.webp');
-  background-position: center;
-  display: inline-block;
-  height: 300px;
+.jumbo img {
+  margin: 0;
+  padding: 0;
 }
