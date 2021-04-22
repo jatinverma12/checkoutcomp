@@ -21,9 +21,14 @@
 </head>
 <body>
 
-  <div class="swiper-container" style=" margin-top:1rem;padding-bottom:30px;">
-    <div class="swiper-wrapper">
-      <div class="col-12 swiper-slide" >
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
         <div class="row jumbo">
           <img  src="./1.jpg" class="col-lg-3 col-md-4 col-sm-5 ">
           <div  class="flex flex-column content" style="justify-content: center; align-items: center; margin-top:3%; margin-left: 3%;;"  >
@@ -34,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 swiper-slide">
+      <div class="carousel-item">
         <div class="row jumbo">
           <img  src="./2.jpg" class="col-lg-3 col-md-4 col-sm-5">
           <div  class="flex flex-column" style="justify-content: center; align-items: center; margin-top:3%; margin-left: 3%;;"  >
@@ -45,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 swiper-slide">
+      <div class="carousel-item">
         <div class="row jumbo">
           <img  src="./3.jpg" class="col-lg-3 col-md-4 col-sm-5">
           <div  class="flex flex-column" style="justify-content: center; align-items: center; margin-top:3%; margin-left: 3%;;"  >
@@ -57,27 +62,37 @@
         </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+
+  
  
   <div class='container-fluid'>
         <h3 class="heading" style='margin: 2rem;;'>Categories To Bag</h3>
 
         <div class="row" style="justify-content: space-around; align-items: center">
-          <div class="row col-lg-2 col-sm-4 col-6" style="padding:0;flex-direction: column; align-items: center;">
+          <div class="row col-lg-2 col-4 " style="padding:0;flex-direction: column; align-items: center;">
             <div class=" circle">
               <img src='./1.jpg'>
             </div>
             <h5>Casual Wear</h5>
           </div>
           
-          <div class="row col-lg-2 col-sm-4 col-6" style="padding:0;flex-direction: column;align-items: center; ">
+          <div class="row col-lg-2 col-4 " style="padding:0;flex-direction: column;align-items: center; ">
             <div class=" circle">
               <img src='./1.jpg'>
             </div>
             <h5>Ethnic Wear</h5>
           </div>
 
-          <div class="row col-lg-2 col-sm-4 col-6" style="padding:0;flex-direction: column;align-items: center; ">
+          <div class="row col-lg-2 col-4 col-6" style="padding:0;flex-direction: column;align-items: center; ">
             <div class=" circle">
               <img  src='./1.jpg'>
             </div>

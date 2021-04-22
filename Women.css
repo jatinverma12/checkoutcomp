@@ -194,6 +194,7 @@ img {
 .jumbo img {
   margin: 0;
   padding: 0;
+  height: 200px;
 }
 
 @media screen and (max-width: 632px) {
