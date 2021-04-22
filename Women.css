@@ -97,7 +97,10 @@ img {
     width: 16%;
     display: inline-block;
     margin: 1.5%;
-    font-size: large;
+  }
+
+  .likedcontainer p {
+    font-size: smaller;
   }
   .last {
     width: 22%;
@@ -126,10 +129,10 @@ img {
   }
   .likedcontainer {
     padding: 0.5rem;
+    font-size: small;
     width: 30%;
     display: inline-block;
     margin: 1%;
-    font-size: large;
   }
   .liked {
     height: 300px;
@@ -149,7 +152,6 @@ img {
     width: 47%;
     display: inline-block;
     margin: 1%;
-    font-size: large;
   }
   .liked {
     height: 300px;
@@ -180,13 +182,7 @@ img {
     margin: 1%;
   }
 }
-.swiper-slide {
-  height: 80%;
-}
-.swiper-container {
-  width: 90%;
-  height: 200px;
-}
+
 .jumbo {
   background-color: #c8c0fa;
 }
@@ -202,10 +198,6 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .swiper-container {
-    width: 90%;
-    height: 400px;
   }
   .jumbo img {
     width: 60%;
