@@ -5,14 +5,14 @@ body {
 img {
   width: 100%;
 }
+.categorytag {
+  margin-top: 1rem;
+}
 .circle {
-  display: inline-block;
-  position: relative;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 1rem;
   border: 4px solid brown;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.26);
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -29,9 +29,75 @@ img {
   margin-left: -50px;
 }
 
+.lastcontainerflex {
+  padding-left: 2.5%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+  a h5 {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .categorytag {
+    background-color: #c9d4cc;
+    padding-top: 5px;
+    margin: 5px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  a h5 {
+    font-size: smaller;
+    font-weight: bold;
+  }
+  .circle img {
+    margin-left: -40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .categorytag {
+    background-color: #c9d4cc;
+    margin: 5px;
+    padding-top: 5px;
+  }
+  .circle {
+    width: 70px;
+    height: 70px;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  a h5 {
+    font-size: x-small;
+    font-weight: bold;
+  }
+  .circle img {
+    margin-left: -40px;
+  }
+}
+
 .liked {
   background-image: url('./9.jpg');
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-position: center;
   background-repeat: no-repeat;
   height: 250px;
@@ -201,5 +267,143 @@ img {
   }
   .jumbo img {
     width: 60%;
+  }
+}
+
+/* Swiper related css */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.productinfo {
+  margin-top: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 350px) {
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .productinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eb80f2;
+    margin-top: 0;
+    padding-bottom: 0.25rem;
+  }
+  .trendingflex {
+    background-color: #74b9f2;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .customerflex {
+    background-color: #f6befa;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1%;
+  }
+  .topbrandflex {
+    background-color: #f2b449;
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .lastcontainer {
+    margin-top: 0.5rem;
+  }
+  .corouselimage {
+    display: none;
+  }
+  .content {
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .corouselimage{
+    display: block;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-button-next {
+    display: block;
+  }
+  .productinfo {
+    align-items: flex-start;
+    background-color: #fff;
+  }
+
+  .trendingflex {
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2.5rem;
+    background-color: #fff;
+  }
+
+  .topbrandflex {
+    align-items: center;
+    padding-left: 1.5%;
+    background-color: #fff;
+  }
+
+  .customerflex {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 414px) {
+  .productinfo p {
+    font-size: small;
   }
 }
