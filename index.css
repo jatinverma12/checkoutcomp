@@ -84,6 +84,7 @@ nav ul li a {
 .t11 {
   display: flex;
   flex-direction: column;
+  font-size: 0.8rem;
 }
 .type {
   display: flex;
@@ -95,18 +96,30 @@ nav ul li a {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  border: 2px black;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid grey!important;
+  font-family: 'Playfair Display', serif; ;;
+  color: grey;
+}
+.t1 h3{
+  color: #000;
 }
 .i11 {
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
+  font-family: 'Playfair Display', serif; ;;
+  font-size: 0.8rem;
+}
+.i11 h3{
+  font-size: 1.3rem;
 }
 .image {
   margin: auto;
   padding: 0;
+}
+.image img{
+  height: 330px;
 }
 
 @media (max-width: 800px) {
@@ -225,6 +238,33 @@ ul {
   justify-content: space-around;
 }
 
+.headerinside p {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 2rem;
+  font-family:'Playfair Display', serif; ;
+}
+.headertext p{
+  font-size: 1.4rem;
+  font-family:'Playfair Display', serif; ;
+}
+.filterhead{
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right:15px;
+  font-family: 'Playfair Display', serif; ;;
+}
+
+.filterhead p{
+  font-size: 1.4rem;
+}
+.filterhead a{
+  font-size:1rem;
+}
+.t1 h3{
+  font-size: 1.3rem;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 540px) {
   .hm1 {
     align-self: center;
@@ -238,7 +278,23 @@ ul {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .headertext h5 {
+  .image img{
+    height: 280px;
+  }
+    .i11 h3{
+      font-size: 1rem;
+    }
+  
+  .t1 h3{
+    font-size: 1rem;
+  }
+  .filterhead p{
+    font-size: 1rem;
+  }
+  .filterhead a{
+    font-size:0.7rem;
+  }
+  .headertext p{
     font-size: small;
   }
   .footer3 {
@@ -419,6 +475,9 @@ ul {
   }
 }
 
+.jumbo{
+  height: 280px;
+}
 .jumbo img {
   width: 50%;
   padding: 0;
