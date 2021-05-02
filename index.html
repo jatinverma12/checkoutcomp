@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    
     <script src="https://kit.fontawesome.com/c98256b770.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -78,7 +81,7 @@
 
 </div>
 
-    <div class="row headertext" style="margin: 1rem;">
+    <div class="row headertext" style="margin: 1rem; margin-top: 2rem;">
         <hr class="toberem" style="background-color: black; width:15%;">
         <p style='font-weight: bold;'> Indian Clothing Company<spam style='font-weight: normal;color: grey;'>(1899)</spam></p>
         <hr class="inc" style="background-color: black; width:15%;">
@@ -89,8 +92,8 @@
 
     <div class="container-fluid">
         
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 filters" >
+        <div class="row"style="justify-content: space-around;">
+            <div class="col-sm-4 col-md-3 col-lg-2 filters" >
                 <div class="row filterhead"  >
                     <p>Filters</p>
                     <a class="btn btn-sm btn-outline-primary" style='background: transparent; border: 2px solid black;'>
@@ -163,20 +166,17 @@
             <div class="t1">
                 <h3>Price</h3>
                 <div class="t12">
-                    <div class="d-flex flew-row" style="margin:0.5rem; justify-content: space-between;align-items: center;">
-                        <a class="btn btn-sm btn-outline-primary" style='background: transparent; border: 2px solid black;'>
-                            1000
-                        </a>
+                    <div class="d-flex flew-row" style="margin:0; margin-bottom: 5px; justify-content: space-evenly;align-items: center;">
+                        <input type="text" id="r1" readonly style="width:22%;border:2px solid black; color:#000; font-size: 12px;">
                         <hr style='width: 10px; border: 2px solid #000;margin: 0;'>
-                        <a class="btn btn-sm btn-outline-primary" style='background: transparent; border: 2px solid black;'>
-                            4000
-                        </a>
-                        <a class="btn btn-sm btn-outline-primary" style='background: transparent; border: 2px solid black;'>
+                        <input type="text" id="r2" readonly style="width:22%;border:2px solid black; color:#000; font-size: 12px;">
+                        <a class="btn btn-sm" href="#" style='background: transparent; border: 2px solid black;color: black;font-size: 10px;'>
                             Apply
                         </a>
                     </div>
                     
-                    <input style="margin:0 auto; width: 100%;fill: black;stroke: none;" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <div id="slider-range"></div> 
+                   
                 </div>
             </div>
             
@@ -477,228 +477,224 @@
 
                 
             </div>
-            <div class="col-sm-6 col-md-8 col-lg-9">
+            <div class="col-sm-8 col-md-9 col-lg-9">
                 <div class="row ">
                     
-                    <div class="col-sm-12 col-md-6 col-lg-3 image" >
+                    <div class="col-sm-6 col-md-4 col-lg-3 image" >
                         <div id="an" style="display: flex;flex-direction: column;background: url('./Images/24.jpg'); height: 330px; justify-content: flex-end;">
-                            <p class="animation" style='color:black; width: 100%;align-self: flex-end; 
-                            height:20px; background-color: #b2b2b2;text-align:center;opacity: 0.6; margin: 0;'>
-                            Wishlist
-                            </p>
                         </div>
                         
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div >Price  <spam style="text-decoration-line: line-through; color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div >Price  <spam style="text-decoration-line: line-through; color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image" id="2">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image" id="2">
                         <img src="./Images/3.jpg">
                        
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/4.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/6.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
                     
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/7.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/8.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/9.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/10.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
                     
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/11.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/12.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/13.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/14.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
                     
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/15.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/16.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/17.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/19.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row ">
                     
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/20.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/21.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/22.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 image">
+                    <div class="col-sm-6 col-md-4 col-lg-3 image">
                         <img src="./Images/23.jpg">
                     
                         <div class="i11">
                             <h3 style="margin:0">BRAND</h3>
                             <div>Material</div>
-                            <div>Price  <spam style="text-decoration-line: line-through;color:grey">Price</spam></div>
-                            <div style='color: grey;'>Size</div>
+                            <div>Price  <spam style="text-decoration-line: line-through;color:#757575">Price</spam></div>
+                            <div style='color: #757575;'>Size</div>
                         </div>
                     </div>
                 </div>
@@ -734,7 +730,7 @@
                     <h4>O F F</h4>
                     <p>On Formal Footwear</p>
                 </div>
-                <a class="btn btn-sm"style=" border:2px solid black; width:70%"  data-toggle="modal" data-target="#CouponModal1">
+                <a class="btn btn-sm"style=" width:70%; border:2px solid #000;"  data-toggle="modal" data-target="#CouponModal1">
                     Redeem Now
                 </a>
                 <div class="modal fade" id="CouponModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -760,7 +756,22 @@
                     <h4>O F F</h4>
                     <p>On Sneakers</p>
                 </div>
-                <a class="btn btn-sm"style=" border:2px solid black; width:70%">Redeem Now</a>
+                <a class="btn btn-sm"style="width:70%;border:2px solid #000;" data-toggle="modal" data-target="#CouponModal2">Redeem Now</a>
+                <div class="modal fade" id="CouponModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body" style='margin: auto;text-align: center;'>
+                            <h1 >Congratulations</h1>
+                          <img style='width: 100px;height: 100px;'src='./Images/modalimage.png'>
+                          <p style='color: grey;'>You Have Successfully Redeemed Your Coupon</p>
+                          
+                        </div>
+                        <div class="modal-footer">
+                        <p style='margin-left: auto;'>T&C</p>  
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-2 hmcard">
                 <div class="hm1">
@@ -769,7 +780,22 @@
                     <h4>O F F</h4>
                     <p>On Denim Wear</p>
                 </div>
-                <a class="btn btn-sm"style=" border:2px solid black; width:70%">Redeem Now</a>
+                <a class="btn btn-sm"style="width:70%;border:2px solid #000;" data-toggle="modal" data-target="#CouponModal3">Redeem Now</a>
+                <div class="modal fade" id="CouponModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body" style='margin: auto;text-align: center;'>
+                            <h1 >Congratulations</h1>
+                          <img style='width: 100px;height: 100px;'src='./Images/modalimage.png'>
+                          <p style='color: grey;'>You Have Successfully Redeemed Your Coupon</p>
+                          
+                        </div>
+                        <div class="modal-footer">
+                        <p style='margin-left: auto;'>T&C</p>  
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-2 hmcard">
                 <div class="hm1">
@@ -778,7 +804,22 @@
                     <h4>O F F</h4>
                     <p>On Tshirts</p>
                 </div>
-                <a class="btn btn-sm"style=" border:2px solid black; width:70%">Redeem Now</a>
+                <a class="btn btn-sm"style="width:70%;border:2px solid #000;" data-toggle="modal" data-target="#CouponModal4">Redeem Now</a>
+                <div class="modal fade" id="CouponModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body" style='margin: auto;text-align: center;'>
+                            <h1 >Congratulations</h1>
+                          <img style='width: 100px;height: 100px;'src='./Images/modalimage.png'>
+                          <p style='color: grey;'>You Have Successfully Redeemed Your Coupon</p>
+                          
+                        </div>
+                        <div class="modal-footer">
+                        <p style='margin-left: auto;'>T&C</p>  
+                        </div> 
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
@@ -900,9 +941,13 @@
 
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <!-- <script src='./index.js'></script> -->
+    
+ 
+    <script src='./index.js'></script> 
     
 </body>
 </html>

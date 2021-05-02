@@ -88,18 +88,18 @@ nav ul li a {
 }
 .type {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .t1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding:8px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 2px solid grey!important;
+  border: 2px solid #d1cfc9!important;
   font-family: 'Playfair Display', serif; ;;
-  color: grey;
+  color: #757575;
 }
 .t1 h3{
   color: #000;
@@ -174,7 +174,6 @@ nav ul li a {
   flex-direction: column;
   justify-content: space-around;
   background: linear-gradient(to bottom, #00ff99 0%, #ffff66 100%);
-  border: 2px solid black;
   padding: 3rem;
   height: 300px;
   font-size: 16px;
@@ -521,4 +520,17 @@ ul {
   .headertext h5 {
     font-size: small;
   }
+}
+
+
+.ui-widget-header{
+  background: #000!important;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.2em!important;
+}
+
+.ui-slider .ui-slider-handle {
+  height: 1em!important;
+  width: 1em!important;
 }
