@@ -20,38 +20,7 @@ body {
   font-size: 16px;
 }
 
-#logo.img {
-  width: 100px;
-  height: 100px;
-}
 
-.navbar-section {
-  margin-bottom: 50px;
-}
-
-.navbar {
-  padding: 2px;
-}
-
-.brand {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  margin-left: 30px;
-}
-
-.main-navbar .burger-menu {
-  font-size: 2rem;
-  padding: 5px;
-}
-
-.navbar img {
-  width: 100px;
-  height: auto;
-}
-
-.navbar-nav {
-  margin-right: auto;
-}
 
 nav ul li {
   margin: 0 10px;
@@ -63,18 +32,8 @@ nav ul li a {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar-2-links {
-  margin-left: auto;
-}
 
-.navbar-2-links a {
-  font-size: 1.6rem;
-}
-.iconsop {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+
 
 .holding {
   align-items: center;
@@ -170,14 +129,7 @@ html {
 }
 
 @media (max-width: 991px) {
-  .navbar-2-links {
-    margin: 0;
-  }
-  .iconsop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+  
   i {
     margin: 0 1rem;
   }
@@ -189,18 +141,6 @@ html {
   .i11 {
     justify-content: center;
     align-items: center;
-  }
-}
-
-@media (max-width: 414px) {
-  #tbr {
-    display: none;
-  }
-  #logo {
-    margin: auto;
-  }
-  .hb1 {
-    margin: 0;
   }
 }
 
@@ -468,9 +408,7 @@ ul {
 }
 
 @media only screen and (max-width: 767px) {
-  #tbf {
-    display: none;
-  }
+ 
   .f31 h5 {
     font-weight: bolder;
   }
@@ -556,14 +494,7 @@ ul {
     height: 450px;
   }
 }
-@media only screen and (max-width: 991px) {
-  #tbf {
-    display: none;
-  }
-  #logo {
-    margin: 0;
-  }
-}
+
 
 @media screen and (max-width: 767px) {
   .headertext {
