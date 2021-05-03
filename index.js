@@ -12,3 +12,13 @@ $( function() {
   $( "#r1" ).val( $( "#slider-range" ).slider( "values", 0 ));
   $( "#r2" ).val( $( "#slider-range" ).slider( "values", 1 ));
 } );
+
+var filter=document.getElementsByClassName('filters')[0];
+var btn=document.getElementsByClassName('mobileview')[0];
+
+btn.addEventListener('click',function(){
+  if(filter.style.display=="none")
+  filter.style.display="block";
+  else
+  filter.style.display="none";
+})
