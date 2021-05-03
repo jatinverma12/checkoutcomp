@@ -178,7 +178,95 @@
         <hr class="inc" style="background-color: black; width:15%;">
         <div class="row filtercontainer">
             <p class=" btn mobileview" style="padding: 0; margin: 0;">Filters</p>
-            <p style="margin:0;">Sort By</p>
+            <p class="btn desktopsort" style="margin:0;" id="myBtn3">Sort By</p>
+            <div id="myModal3" class="modal3">
+                <div class="modal-content3" >
+                  
+                  <div class="container" style='margin-bottom: 2rem;'>
+                    <div class="row">
+                      <!-- <div class="input-group mb-3 mt-3">
+                        <i class="fa fa-search"></i>
+                         <span class="input-group-text" id="basic-addon1"></span> 
+                        <input type="text" class="form-control" placeholder="Casual Shirt" aria-label="Username"
+                          aria-describedby="basic-addon1">
+                      </div> -->
+                      <div class="input-group" style='background-color: #f2f2f2;
+                      height: 3rem;
+                      width: 95%;
+                      margin: auto;
+                      margin-top: 2rem;
+                      margin-bottom: 1rem;
+                      border-radius: 0.8rem;'>
+                        <i class="fa fa-search " style='margin:auto ;margin-left:1rem;'></i>
+                        <input type="text" style='margin:auto;'class="form-control" placeholder="Sort By" >
+                        </div>
+
+                        <div class="col-12" style='margin-left: 7%;font-size: 13.6px;'>
+                            <div class="form-check" >
+                                <label class="form-check-label subtitle">
+                                  <input type="radio" class="form-check-input " name="optradio">Price:High to Low
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label subtitle">
+                                  <input type="radio" class="form-check-input " name="optradio">Price:Low to High
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label subtitle">
+                                  <input type="radio" class="form-check-input " name="optradio">Popularity
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label subtitle">
+                                  <input type="radio" class="form-check-input " name="optradio">What's New
+                                </label>
+                              </div>
+                        </div>
+                       
+
+                      <!-- <div class="col-12" style='margin-left: 7%;'>
+                        <p style='margin-bottom: 10px;'><a class="title" href="#">SHOP BY BRAND</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Shirt By Suited</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Shirt By IDC</a> </p>
+                        <p style='margin-bottom: 10px;'><a class="subtitle" href="#">Shirt By Sukoon</a> </p>
+                        <p style='margin-bottom: 10px;' ><a class="title" href="#">SHOP BY MATERIAL</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Cotton Shirt</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Polyster Shirt</a> </p>
+                        <p style='margin-bottom: 10px;'><a class="subtitle" href="#">Polyster T-Shirt</a> </p>
+                        <p style='margin-bottom: 10px;'><a class="title" href="#">SHOP BY OCCASION</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Party Wear</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Formal Wear</a> </p>
+                        <p style='margin-bottom: 7px;'><a class="subtitle" href="#">Casual Wearsub</a> </p>
+                       
+                      
+                      </div> -->
+                     
+                    </div>
+                  </div>
+                </div>
+    
+              </div>
+               <div class="dropdown mobiledropdown">
+             
+                <p class="btn dropdown-toggle mobiledropdownbtn" style="margin:0;" data-toggle="dropdown"  id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">Sort By</p>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item subtitle" href="#">Price:High to Low</a>
+                  <a class="dropdown-item subtitle" href="#">Price:Low to High</a>
+                  <a class="dropdown-item subtitle" href="#">Popularity</a>
+                  <a class="dropdown-item subtitle" href="#">What's new</a>
+                </div>
+              </div>
+               
+              <!-- <div class="dropdown">
+                <p class="btn dropdown-toggle" style="margin:0;" data-toggle="dropdown"  id="dropdownMenuButton"  aria-haspopup="true" aria-expanded="false">Sort By</p>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" tabindex="0">Action</a>
+                  <a class="dropdown-item active" tabindex="0">Another action</a>
+                  <a class="dropdown-item" tabindex="0">Something else here</a>
+                </div>
+              </div> -->
+           
         </div>
         
         <hr class="toberem" style="background-color: black; width:15%;">
@@ -1039,10 +1127,12 @@
 
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
     
  
     <script src='./index.js'></script> 
