@@ -330,6 +330,8 @@ ul {
   .filtercontainer {
     justify-content: space-around;
     width: 100%;
+    background-color:#c6cfc8;
+    align-items: center;
   }
   .header {
     font-size: small;
