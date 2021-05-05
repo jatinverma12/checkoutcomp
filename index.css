@@ -59,6 +59,8 @@ a:hover{
         border-radius: 0;
         font-size: 12px;    
     }
+
+    /* FIRST ORDER TRACK MODALS */
     .modal1 {
         padding-top: 17.2rem; /* Location of the box */
         padding-left: 4rem;
@@ -165,6 +167,8 @@ a:hover{
         padding-top: 13.2rem; /* Location of the box */
         padding-left: 45%;
       }
+
+/* FILTER MODAL CSS */
       .modal2{
         display:none; 
         padding-top: 8.2rem; /* Location of the box */
@@ -190,18 +194,47 @@ a:hover{
         height: 1.3rem;
         font-weight: bold;
       }
-      /* The Close Button */
-      .close {
-        color: #aaaaaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
+ /* filter modal css ended */
+
+/* SECOND ORDER TRACK MODALS  */
+ .modal3 {
+  padding-top: 26.5rem; /* Location of the box */
+  padding-left: 4rem;
+  display: none; 
+ 
+}
+.modal31{
+  display: none; 
+  padding-top: 19.2rem; /* Location of the box */
+  padding-left: 1%;
+}
+.modal32{
+  display: none; 
+  padding-top: 17.2rem; /* Location of the box */
+  padding-left: 17%;
+}
+
+.modal321{
+  display: none; 
+  padding-top: 17.2rem; /* Location of the box */
+  padding-left: 15%;
+}
+
+
+.modal33{
+  display:none; 
+  padding-top: 17.2rem; /* Location of the box */
+  padding-left: 22%;
+}
+
+.modal34{
+  display:none; 
+  padding-top: 17.2rem; /* Location of the box */
+  padding-left: 35%;
+}
+.modal35{
+  display:none; 
+  padding-top: 17.2rem; /* Location of the box */
+  padding-left: 45%;
+}
 }
