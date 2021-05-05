@@ -44,7 +44,8 @@ a:hover{
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
+    
     .profileiconcontainer{
         padding-left: 4rem;
     }
@@ -56,12 +57,12 @@ a:hover{
         border: 1px solid #d7a1ed;
         height: 2.3rem;
         border-radius: 0;
-        
+        font-size: 12px;    
     }
     .modal1 {
         padding-top: 17.2rem; /* Location of the box */
         padding-left: 4rem;
-        display: block; 
+        display: none; 
        
       }
     
@@ -69,14 +70,15 @@ a:hover{
       .modal11{
         display: none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 1rem;
+        padding-left: 1%;
       }
       .modal-content11{
-        width: 280px;
-        height: 290px;
+        width: 240px;
+        height: 180px;
         background-color: #fff;
         border-radius: 8px;
         padding: 0.5rem;
+
       }
 
       .modal-content11 p{
@@ -92,11 +94,11 @@ a:hover{
       .modal12{
         display: none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 10.8rem;
+        padding-left: 17%;
       }
       .modal-content12{
-        width: 280px;
-        height: 280px;
+        width: 230px;
+        height: 220px;
         background-color: #fff;
         border-radius: 8px;
         padding: 0.5rem;
@@ -115,11 +117,11 @@ a:hover{
       .modal121{
         display: none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 10.8rem;
+        padding-left: 15%;
       }
       .modal-content121{
-        width: 280px;
-        height: 280px;
+        width: 230px;
+        height: 220px;
         background-color: #fff;
         border-radius: 8px;
         padding: 0.5rem;
@@ -135,11 +137,11 @@ a:hover{
       .modal13{
         display:none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 16.8rem;
+        padding-left: 22%;
       }
       .modal-content13{
         width: 280px;
-        height: 350px;
+        height: 300px;
         background-color: #fff;
         border-radius: 8px;
         padding: 0.5rem;
@@ -156,27 +158,28 @@ a:hover{
       .modal14{
         display:none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 23.8rem;
+        padding-left: 35%;
       }
       .modal15{
         display:none; 
         padding-top: 13.2rem; /* Location of the box */
-        padding-left: 30.7rem;
+        padding-left: 45%;
       }
       .modal2{
         display:none; 
         padding-top: 8.2rem; /* Location of the box */
-        padding-left: 60.7rem;
+        padding-left: 70%;
       }
       .modal-content2{
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
         background-color: #fff;
         border-radius: 8px;
         padding: 0.5rem;
       }
       
-      .modal-content2 p{
+      .modal-content2 a{
+        display: inherit;
         width: 100%;
         padding-top: 5px;
         margin: 0;
@@ -184,7 +187,7 @@ a:hover{
         padding-left: 5px;
         border:none;
         font-size: 12px;
-        height: 1.7rem;
+        height: 1.3rem;
         font-weight: bold;
       }
       /* The Close Button */
