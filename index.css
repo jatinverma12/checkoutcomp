@@ -1,70 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
 
-body{
-    font-family: 'Playfair Display', serif;
-/* font-family: 'Roboto', sans-serif; */
+body {
+  font-family: 'Playfair Display', serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
-h3{
-    margin: 0;
-    padding: 0;
+h3 {
+  margin: 0;
+  padding: 0;
 }
-.row{
-    margin: 0;
+.row {
+  margin: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
-    
+a {
+  text-decoration: none;
+  color: black;
 }
-a:hover{
-    text-decoration: none;
-    color: black;
-}
-
-.profileiconcontainer{
-    margin-top: 1rem;
-}
-.underordermodal{
-    display: flex;
-    padding: 0;
-    background-color: #e6daeb;
-    margin-top: 1px;
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
-.modal{
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    color: #000;
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+.profileiconcontainer {
+  margin-top: 1rem;
+}
+.underordermodal {
+  display: flex;
+  padding: 0;
+  background-color: #e6daeb;
+  margin-top: 1px;
 }
 
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  color: #000;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
 
-
-@media screen and (min-width:360px) {
-  .username{
+@media screen and (min-width: 360px) {
+  .username {
     font-size: 12px;
     margin-left: 0;
   }
-  .animationfade{
+  .animationfade {
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
   }
 
-  .animationslide{
+  .animationslide {
     -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.8s
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.8s;
   }
-  .underordermodal p{
+  .underordermodal p {
     width: 20%;
     padding-top: 5px;
     margin: 0;
@@ -72,49 +69,48 @@ a:hover{
     border: 1px solid #d7a1ed;
     height: 2.3rem;
     border-radius: 0;
-    font-size: 12px; 
+    font-size: 12px;
   }
-  .underordermodal{
+  .underordermodal {
     justify-content: space-between;
     text-align: center;
     border: 1px solid #d7a1ed;
-    
   }
   .modal1 {
-    padding-top: 10rem; /* Location of the box */
-    display: none; 
+    padding-top: 7rem; /* Location of the box */
+    display: none;
   }
-  .modal11{
-    display: none; 
-     /* Location of the box */
+  .modal11 {
+    display: none;
+    /* Location of the box */
   }
-  .modal-content11{
+  .modal-content11 {
     margin: auto;
-    position:fixed;
+    position: fixed;
     width: 240px;
     height: 180px;
-    left:22%;
+    left: 22%;
     bottom: 150px;
     background-color: #fff;
     border-radius: 8px;
     padding: 0.5rem;
   }
 
-  .modal-content11 p{
+  .modal-content11 p {
     width: 30%;
     padding-top: 5px;
     margin: 0;
     text-align: center;
-    border:none;
+    border: none;
     font-size: 12px;
     height: 1.8rem;
   }
 
-  .modal12{
-    display: none; 
-   /* Location of the box */
+  .modal12 {
+    display: none;
+    /* Location of the box */
   }
-  .modal-content12{
+  .modal-content12 {
     position: fixed;
     width: 230px;
     height: 220px;
@@ -122,24 +118,24 @@ a:hover{
     border-radius: 8px;
     padding: 0.5rem;
     left: 22%;
-    bottom:150px;
+    bottom: 150px;
   }
-  
-  .modal-content12 p{
+
+  .modal-content12 p {
     width: 40%;
     padding-top: 5px;
     margin: 0;
-    text-align:left;
-    border:none;
+    text-align: left;
+    border: none;
     font-size: 12px;
     height: 1.8rem;
   }
 
-  .modal121{
-    display: none; 
-     /* Location of the box */
+  .modal121 {
+    display: none;
+    /* Location of the box */
   }
-  .modal-content121{
+  .modal-content121 {
     position: fixed;
     width: 230px;
     height: 220px;
@@ -150,19 +146,19 @@ a:hover{
     left: 22%;
     bottom: 150px;
   }
-  .modal-content121 p{
+  .modal-content121 p {
     padding-top: 5px;
     margin: 0;
-    text-align:left;
-    border:none;
+    text-align: left;
+    border: none;
     font-size: 12px;
   }
 
-  .modal13{
-    display:none; 
-     /* Location of the box */
+  .modal13 {
+    display: none;
+    /* Location of the box */
   }
-  .modal-content13{
+  .modal-content13 {
     width: 280px;
     height: 300px;
     background-color: #fff;
@@ -172,8 +168,8 @@ a:hover{
     bottom: 150px;
     position: fixed;
   }
-  .modal-content13 p{
-      width: 40%;
+  .modal-content13 p {
+    width: 40%;
     border: none;
     font-size: 12px;
     text-align: left;
@@ -181,17 +177,17 @@ a:hover{
     height: 1.8rem;
   }
 
-  .modal14{
-    display:none; 
+  .modal14 {
+    display: none;
   }
-  .modal15{
-    display:none; 
+  .modal15 {
+    display: none;
   }
 
-  .modal2{
-    display:none; 
+  .modal2 {
+    display: none;
   }
-  .modal-content2{
+  .modal-content2 {
     width: 200px;
     height: 200px;
     background-color: #fff;
@@ -201,305 +197,337 @@ a:hover{
     left: 22%;
     bottom: 150px;
   }
-  
-  .modal-content2 a{
+
+  .modal-content2 a {
     display: inherit;
     width: 100%;
     padding-top: 5px;
     margin: 0;
-    text-align:left;
+    text-align: left;
     padding-left: 5px;
-    border:none;
+    border: none;
     font-size: 12px;
     height: 1.3rem;
     font-weight: bold;
   }
 
   .modal3 {
-    padding-top: 10rem; /* Location of the box */
-    display: none; 
-   
+    padding-top: 7rem; /* Location of the box */
+    display: none;
   }
-  .modal31{
-    display: none; 
-   
+  .modal31 {
+    display: none;
   }
-  .modal32{
-    display: none; 
+  .modal32 {
+    display: none;
+  }
 
+  .modal321 {
+    display: none;
   }
-  
-  .modal321{
-    display: none; 
-  
+
+  .modal33 {
+    display: none;
   }
-  
-  
-  .modal33{
-    display:none; 
-    
+
+  .modal34 {
+    display: none;
   }
-  
-  .modal34{
-    display:none; 
-  
+  .modal35 {
+    display: none;
   }
-  .modal35{
-    display:none; 
- 
-  }
-  i.col-1.fas.fa-user-circle{
+  i.col-1.fas.fa-user-circle {
     font-size: 2rem;
   }
+  .headerbox {
+    justify-content: space-between;
+    width: 90%; 
+    background-color:#ddd;
+    left:1.5rem;
+    top:5rem;
+    position: fixed;
+    z-index: 99; 
+    
+  }
+  .myBtn{
+    margin-top: 4rem!important;
+    /* z-index: 1!important; */
+  }
+  
 }
-@media screen and (min-width:768px) {
-  .animationfade{
+@media screen and (min-width: 768px) {
+  .myBtn{
+    margin-top: 1.5rem!important;
+  }
+  .headerbox {
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: inherit; 
+    background-color:unset;
+    left:unset;
+    top:unset;
+    position: unset;
+  }
+  .animationfade {
     animation-name: unset;
     animation-duration: unset;
   }
 
-  .animationslide{
+  .animationslide {
     animation-name: unset;
     animation-duration: unset;
   }
-  .username{
+  .username {
     font-size: 2rem;
     margin-left: 0;
   }
-  i.col-1.fas.fa-user-circle{
+  i.col-1.fas.fa-user-circle {
     font-size: 3rem;
   }
-    
-    .profileiconcontainer{
-        padding-left: 4rem;
-    }
-    .underordermodal p{
-        width: 20%;
-        padding-top: 5px;
-        margin: 0;
-        text-align: center;
-        border: 1px solid #d7a1ed;
-        height: 2.3rem;
-        border-radius: 0;
-        font-size: 12px;    
-    }
 
+  .profileiconcontainer {
+    padding-left: 4rem;
+  }
+  .underordermodal p {
+    width: 20%;
+    padding-top: 5px;
+    margin: 0;
+    text-align: center;
+    border: 1px solid #d7a1ed;
+    height: 2.3rem;
+    border-radius: 0;
+    font-size: 12px;
+  }
 
-    /* FIRST ORDER TRACK MODALS */
-    .modal1 {
-        padding-top: 17.2rem!important; /* Location of the box */
-        padding-left: 4rem!important;
-        display: none; 
-       
-      }
-    
-      
-      .modal11{
-        display: none; 
-        padding-top: 13.2rem!important ;/* Location of the box */
-        padding-left: 1%!important;
-      }
-      .modal-content11{
-        width: 240px;
-        height: 180px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0;
-        position: unset;
-        left: 0;
-        bottom: 0;
+  /* FIRST ORDER TRACK MODALS */
+  .modal1 {
+    padding-top: 17.2rem !important; /* Location of the box */
+    padding-left: 4rem !important;
+    display: none;
+  }
 
-      }
+  .modal11 {
+    display: none;
+    padding-top: 13.2rem !important ; /* Location of the box */
+    padding-left: 1% !important;
+  }
+  .modal-content11 {
+    width: 240px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0;
+    position: unset;
+    left: 0;
+    bottom: 0;
+  }
 
-      .modal-content11 p{
-        width: 30%;
-        padding-top: 5px;
-        margin: 0;
-        text-align: center;
-        border:none;
-        font-size: 12px;
-        height: 1.8rem;
-      }
-      
-      .modal12{
-        display: none; 
-        padding-top: 13.2rem; /* Location of the box */
-        padding-left: 17%;
-      }
-      .modal-content12{
-        width: 230px;
-        height: 220px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0;
-        position: unset;
-        left: 0;
-        bottom: 0;
-      }
-      
-      .modal-content12 p{
-        width: 40%;
-        padding-top: 5px;
-        margin: 0;
-        text-align:left;
-        border:none;
-        font-size: 12px;
-        height: 1.8rem;
-      }
-      .modal121{
-        display: none; 
-        padding-top: 13.2rem; /* Location of the box */
-        padding-left: 15%;
-      }
-      .modal-content121{
-        width: 230px;
-        height: 220px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0;
-        position: unset;
-        left: 0;
-        bottom: 0;
-      }
-      .modal-content121 p{
-        padding-top: 5px;
-        margin: 0;
-        text-align:left;
-        border:none;
-        font-size: 12px;
-      }
+  .modal-content11 p {
+    width: 30%;
+    padding-top: 5px;
+    margin: 0;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+    height: 1.8rem;
+  }
 
-      .modal13{
-        display:none; 
-        padding-top: 13.2rem; /* Location of the box */
-        padding-left: 22%;
-      }
-      .modal-content13{
-        width: 280px;
-        height: 300px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0;
-        position: unset;
-        left: 0;
-        bottom: 0;
-      }
-      .modal-content13 p{
-          width: 40%;
-        border: none;
-        font-size: 12px;
-        text-align: left;
-        padding-left: 5px;
-        height: 1.8rem;
-      }
-      
-      .modal14{
-        display:none; 
-        padding-top: 13.2rem; /* Location of the box */
-        padding-left: 35%;
-      }
-      .modal15{
-        display:none; 
-        padding-top: 13.2rem; /* Location of the box */
-        padding-left: 45%;
-      }
+  .modal12 {
+    display: none;
+    padding-top: 13.2rem; /* Location of the box */
+    padding-left: 17%;
+  }
+  .modal-content12 {
+    width: 230px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0;
+    position: unset;
+    left: 0;
+    bottom: 0;
+  }
 
-/* FILTER MODAL CSS */
-      .modal2{
-        display:none; 
-        padding-top: 8.2rem; /* Location of the box */
-        padding-left: 70%;
-      }
-      .modal-content2{
-        width: 200px;
-        height: 200px;
-        background-color: #fff;
-        border-radius: 8px;
-        padding: 0.5rem;
-        margin: 0;
-        position: unset;
-        left: 0;
-        bottom: 0;
-      }
-      
-      .modal-content2 a{
-        display: inherit;
-        width: 100%;
-        padding-top: 5px;
-        margin: 0;
-        text-align:left;
-        padding-left: 5px;
-        border:none;
-        font-size: 12px;
-        height: 1.3rem;
-        
-      }
- /* filter modal css ended */
+  .modal-content12 p {
+    width: 40%;
+    padding-top: 5px;
+    margin: 0;
+    text-align: left;
+    border: none;
+    font-size: 12px;
+    height: 1.8rem;
+  }
+  .modal121 {
+    display: none;
+    padding-top: 13.2rem; /* Location of the box */
+    padding-left: 15%;
+  }
+  .modal-content121 {
+    width: 230px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0;
+    position: unset;
+    left: 0;
+    bottom: 0;
+  }
+  .modal-content121 p {
+    padding-top: 5px;
+    margin: 0;
+    text-align: left;
+    border: none;
+    font-size: 12px;
+  }
 
-/* SECOND ORDER TRACK MODALS  */
- .modal3 {
-  padding-top: 26.5rem; /* Location of the box */
-  padding-left: 4rem;
-  display: none; 
- 
-}
-.modal31{
-  display: none; 
-  padding-top: 19.2rem; /* Location of the box */
-  padding-left: 1%;
-}
-.modal32{
-  display: none; 
-  padding-top: 17.2rem; /* Location of the box */
-  padding-left: 17%;
-}
+  .modal13 {
+    display: none;
+    padding-top: 13.2rem; /* Location of the box */
+    padding-left: 22%;
+  }
+  .modal-content13 {
+    width: 280px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0;
+    position: unset;
+    left: 0;
+    bottom: 0;
+  }
+  .modal-content13 p {
+    width: 40%;
+    border: none;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 5px;
+    height: 1.8rem;
+  }
 
-.modal321{
-  display: none; 
-  padding-top: 17.2rem; /* Location of the box */
-  padding-left: 15%;
-}
+  .modal14 {
+    display: none;
+    padding-top: 13.2rem; /* Location of the box */
+    padding-left: 35%;
+  }
+  .modal15 {
+    display: none;
+    padding-top: 13.2rem; /* Location of the box */
+    padding-left: 45%;
+  }
 
+  /* FILTER MODAL CSS */
+  .modal2 {
+    display: none;
+    padding-top: 8.2rem; /* Location of the box */
+    padding-left: 70%;
+  }
+  .modal-content2 {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin: 0;
+    position: unset;
+    left: 0;
+    bottom: 0;
+  }
 
-.modal33{
-  display:none; 
-  padding-top: 17.2rem; /* Location of the box */
-  padding-left: 22%;
-}
+  .modal-content2 a {
+    display: inherit;
+    width: 100%;
+    padding-top: 5px;
+    margin: 0;
+    text-align: left;
+    padding-left: 5px;
+    border: none;
+    font-size: 12px;
+    height: 1.3rem;
+  }
+  /* filter modal css ended */
 
-.modal34{
-  display:none; 
-  padding-top: 17.2rem; /* Location of the box */
-  padding-left: 35%;
-}
-.modal35{
-  display:none; 
-  padding-top: 17.2rem; /* Location of the box */
-  padding-left: 45%;
-}
+  /* SECOND ORDER TRACK MODALS  */
+  .modal3 {
+    padding-top: 26.5rem; /* Location of the box */
+    padding-left: 4rem;
+    display: none;
+  }
+  .modal31 {
+    display: none;
+    padding-top: 19.2rem; /* Location of the box */
+    padding-left: 1%;
+  }
+  .modal32 {
+    display: none;
+    padding-top: 17.2rem; /* Location of the box */
+    padding-left: 17%;
+  }
+
+  .modal321 {
+    display: none;
+    padding-top: 17.2rem; /* Location of the box */
+    padding-left: 15%;
+  }
+
+  .modal33 {
+    display: none;
+    padding-top: 17.2rem; /* Location of the box */
+    padding-left: 22%;
+  }
+
+  .modal34 {
+    display: none;
+    padding-top: 17.2rem; /* Location of the box */
+    padding-left: 35%;
+  }
+  .modal35 {
+    display: none;
+    padding-top: 17.2rem; /* Location of the box */
+    padding-left: 45%;
+  }
 }
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 150px; opacity: 1}
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 150px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
